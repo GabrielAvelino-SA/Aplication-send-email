@@ -1,8 +1,8 @@
 FROM python:3
 
 # espaço de trabalho 
-WORKDIR /app
-COPY . /app
+WORKDIR /usr/src
+COPY . /usr/src/app/
 
 # Variaveis de anbiente
 ENV FLASK_APP __init__.py
@@ -10,6 +10,6 @@ ENV FLASK_RUN_HOST 0.0.0.0
 
 RUN apt update -y
 RUN pip install --upgrade pip
-RUN pip install -r requirements.txt
+RUN pip install -r app/requirements.txt
 
-CMD ["flask", "run"]
+CMD [ "sh", "app/entrypoint.sh" ]
