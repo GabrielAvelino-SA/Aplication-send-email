@@ -20,4 +20,4 @@
 
 
 ### Infraestrutura
- [northwind](https://github.com/pthom/northwind_psql/blob/master/northwind.sql) | [Docker]() | [git]() | [Flask]()
+ [northwind](https://github.com/pthom/northwind_psql/blob/master/northwind.sql) | [Docker]() | [git]() | [Flask]() | [MVC]()
