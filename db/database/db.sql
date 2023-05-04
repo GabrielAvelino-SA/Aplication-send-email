@@ -30,4 +30,4 @@ CREATE TABLE users (
     senha VARCHAR(100) NOT NULL
 );
 
-INSERT INTO users VALUES (1, 'SubTrow', 'Maria Anders', 'Sales Representative', 'Obere Str. 57');
+INSERT INTO users VALUES (1, 'Maria Anders', 'Sales Representative', 'Obere Str. 57');
