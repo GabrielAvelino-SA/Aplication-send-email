@@ -13,6 +13,7 @@ ENV FLASK_RUN_HOST 0.0.0.0
 RUN apt update -y
 RUN pip install --upgrade pip
 RUN pip install psycopg2
+RUN pip install python-dotenv
 RUN pip install -r app/requirements.txt
 
 CMD [ "sh", "app/entrypoint.sh" ]

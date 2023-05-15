@@ -1,11 +1,10 @@
-from flask import Flask, request, render_template
-from flask_login import LoginManager
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate, MigrateCommand
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:postgres@10.5.0.4:5432/northwind"
+app.config.from_pyfile("config.py")
 
-login_manager = LoginManager(app)
 db = SQLAlchemy(app)
-
+# migrate = Migrate(app, db)
 from app.controllers import default
