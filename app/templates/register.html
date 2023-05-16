@@ -1,6 +1,27 @@
-<form action="" method="post">
-    <input type="text" name="name" placeholder="Insira seu nome">
-    <input type="email" name="email" placeholder="Insisa seu email">
-    <input type="password" name="password" placeholder="***">
-    <input type="submit" value="Cadastrar">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Gerais</title>
+</head>
+<body>
+    <form action="/pagina-processa-dados-do-form" method="post">
+    <fieldset>
+            <legend>Dados de Registro</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" minlength="3" id="nome" required name="true">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="exemplo@.com" required name="true">
+
+            <label for="password">Senha:</label>
+            <input type="password" id="senha" placeholder="********" required name="true">
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar formulario</button>
+        </form>
+    </fieldset>
+</body>
+</html>
