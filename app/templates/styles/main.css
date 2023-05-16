@@ -1,0 +1,47 @@
+/* for home page*/
+div#home{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(315deg, blue, rgb(187, 187, 238));
+}
+.banner-left{
+    width: 200px;
+    height: 297px;
+    padding: 70px 30px 44px;
+    background-color: #303f9f;
+
+    float:left;
+    border-radius: 1.25rem 0rem 0rem 1.25rem;
+
+    text-align: center;
+    color: white;
+    box-shadow: 39px 37px 35px rgba(50, 50, 50, 0.77);
+}
+.login-left{
+    background-color: white;
+    float: right;
+}
+.login-form{
+    width: 85%;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    
+    background: #fff;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    place-items: center;
+    margin: 0;
+    box-shadow:39px 37px 35px rgba(50, 50, 50, 0.77);
+}
+.login-form > input{
+    height: 56px;
+    width: 200px;
+    outline: none;
+    padding: 0;
+}
